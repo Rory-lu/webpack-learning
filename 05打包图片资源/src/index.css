@@ -1,0 +1,15 @@
+.img1 {
+  width: 100px;
+  height: 100px;
+  background: url('./img/web_img_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  width: 100px;
+  height: 100px;
+  background: url('./img/web_img-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
