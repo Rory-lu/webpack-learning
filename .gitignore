@@ -1,8 +1,16 @@
 # Dependency directories
 node_modules/
 
+build/
+
 # vscode
 .vscode
 
 # .DS_Store
 .DS_Store
+
+# */node_modules ignore
+*/node_modules/
+
+# */build ignore
+*/build/
