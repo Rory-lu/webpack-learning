@@ -10,7 +10,7 @@ module.exports = {
 
   output: {
     filename: 'js/built.js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build'),
   },
 
   module: {
@@ -19,7 +19,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          
+
           'css-loader',
 
           /**
@@ -54,24 +54,25 @@ module.exports = {
               ident: 'postcss',
               plugins: () => [
                 // 要引入postcss-preset-env插件
+                // eslint-disable-next-line
                 require('postcss-preset-env')()
-              ]
-            }
-          }
-        ]
-      }
-    ]
+              ],
+            },
+          },
+        ],
+      },
+    ],
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
-    
+
     new MiniCssExtractPlugin({
-      filename: 'css/built.css'
-    })
+      filename: 'css/built.css',
+    }),
   ],
 
-  mode: 'development'
-}
+  mode: 'development',
+};
