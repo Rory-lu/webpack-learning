@@ -20,6 +20,9 @@ module.exports = {
       //   "eslintConfig": {
       //    "extends": "airbnb-base"
       //   }
+      //    "eslintConfig": {
+      //      "extends": "airbnb-base"
+      //    }
       // }
       // 4.如何自动修复: eslint-loader, options - fix: true
       // 5.忽略检查，下一行不进行eslint检查 注释 // eslint-disable-next-line
